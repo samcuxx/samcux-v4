@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {Heading3, Paragraph } from './ui'
+import {Heading3, Paragraph } from '@/components/ui'
 
 const projects = [
   {

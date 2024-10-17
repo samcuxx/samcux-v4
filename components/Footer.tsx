@@ -1,4 +1,4 @@
-import { Paragraph } from './ui'
+import { Paragraph } from '@/components/ui'
 
 const Footer = () => {
   return (

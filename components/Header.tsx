@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Heading1, Heading2, Paragraph } from "@/components/ui";
 
+
 const Header = () => {
   return (
     <header className="h-full flex flex-col justify-between">

@@ -1,4 +1,4 @@
-import { Heading3, Paragraph } from './ui'
+import { Heading3, Paragraph } from '@/components/ui'
 
 const experiences = [
   {
