@@ -1,7 +1,7 @@
 import Header from '../components/Header'
 import About from '../components/About'
-import Experience from '../components/Experience'
-import Projects from '../components/Projects'
+// import Experience from '../components/Experience'
+// import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 
 
@@ -14,8 +14,8 @@ export default function Home() {
       <div className="md:w-[50%]">
         <main className="max-w-3xl mx-auto px-8 py-16 md:py-24 md:h-screen md:overflow-y-auto hide-scrollbar">
           <About />
-          <Experience />
-          <Projects />
+          {/* <Experience /> */}
+          {/* <Projects /> */}
           <Footer />
         </main>
       </div>
