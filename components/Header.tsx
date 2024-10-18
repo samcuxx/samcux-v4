@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
 
   return (
     <header className="h-full flex flex-col justify-between">
-      <div className="flex flex-col justify-between h-full my-10">
+      <div className="flex flex-col justify-between h-full my-10 ">
         <div className="flex-1 ">
           <Heading1 className="text-[#ccd6f6]  mb-3">Samuel Amoah</Heading1>
           <Heading2 className="text-xl text-[#e2e8f0] mb-3">

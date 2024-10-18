@@ -1,21 +1,6 @@
 import Image from 'next/image'
-import {Heading3, Paragraph } from '@/components/ui'
-
-const projects = [
-  {
-    title: 'Build a Spotify Connected App',
-    description: 'Video course on how to build a web app with the Spotify Web API. Learn about REST APIs, user auth flows, Node, Express, React, Styled Components, and more.',
-    image: '/spotify-app.png',
-    link: '#',
-  },
-  {
-    title: 'Spotify Profile',
-    description: 'Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track.',
-    image: '/spotify-profile.png',
-    link: '#',
-  },
-  // Add more projects as needed
-]
+import { Heading3, Paragraph } from '@/components/ui'
+import { projects } from '@/data'
 
 const Projects = () => {
   return (
