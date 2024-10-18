@@ -24,7 +24,7 @@ const Profile = () => {
         onClick={openModal} 
       />
       {modalIsOpen && (
-        <div className="fixed inset-0 bg-opacity-50 flex items-center justify-center transition-opacity duration-300 ease-in-out" onClick={closeModal}>
+        <div className="fixed inset-0 bg-opacity-50 flex items-center justify-center transition-opacity duration-300 ease-in-out z-50 rounded-full" onClick={closeModal}>
           <div className="relative p-4 rounded-full transition-transform duration-300 ease-in-out transform scale-100" onClick={(e) => e.stopPropagation()}>
             <Image src={profileImage} alt="Samuel Amoah" width={300} height={360} className="rounded-lg w-[70vh]" />
           </div>
