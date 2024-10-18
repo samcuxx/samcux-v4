@@ -15,7 +15,7 @@ interface ExperienceType {
 const Experience = () => {
   return (
     <section id="experience" className="mb-24">
-      <Heading3 className="mb-4 text-[#ccd6f6] md:hidden sticky top-0 z-10 py-3 bg-opacity-80 backdrop-filter backdrop-blur-md uppercase">Experience</Heading3>
+      <Heading3 className="mb-4 text-[#ccd6f6] md:hidden sticky top-0 z-10 py-3 bg-opacity-80 backdrop-filter backdrop-blur-md uppercase font-extrabold">Experience</Heading3>
       <div className="space-y-8">
         {experiences.map((exp: ExperienceType, index: number) => (
           <MoveEffect 
