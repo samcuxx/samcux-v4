@@ -5,7 +5,7 @@ import Resume from '@/components/ui/Resume'
 const About = () => {
   return (
     <section id="about" className="mb-24">
-      <Heading3 className="mb-4 text-[#ccd6f6] md:hidden sticky top-0 z-10 py-2 bg-opacity-80 backdrop-filter backdrop-blur-md uppercase">About</Heading3>
+      <Heading3 className="mb-4 text-[#ccd6f6] md:hidden sticky top-0 z-10 py-3 bg-opacity-80 backdrop-filter backdrop-blur-md uppercase">About</Heading3>
       <div className="space-y-4">
         {aboutMe.paragraphs.map((paragraph, index) => (
           <Paragraph key={index}>

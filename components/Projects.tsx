@@ -5,7 +5,7 @@ import { projects } from '@/data'
 const Projects = () => {
   return (
     <section id="projects" className="mb-12">
-      <Heading3 className="mb-4 text-[#ccd6f6] md:hidden sticky top-0 z-10 py-2 bg-opacity-80 backdrop-filter backdrop-blur-md uppercase">
+      <Heading3 className="mb-4 text-[#ccd6f6] md:hidden sticky top-0 z-10 py-3 bg-opacity-80 backdrop-filter backdrop-blur-md uppercase">
         Featured Projects
       </Heading3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
