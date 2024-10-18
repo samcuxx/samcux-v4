@@ -1,7 +1,17 @@
 import Link from "next/link";
 import { Heading1, Heading2, Paragraph } from "@/components/ui";
 
-const Header = () => {
+interface HeaderProps {
+  activeSection: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ activeSection }) => {
+  const navItems = [
+    { href: "#about", label: "About" },
+    { href: "#experience", label: "Experience" },
+    { href: "#projects", label: "Projects" },
+  ];
+
   return (
     <header className="h-full flex flex-col justify-between">
       <div className="flex flex-col justify-between h-full my-10">
@@ -17,33 +27,23 @@ const Header = () => {
         <div className="flex-1 hidden md:block">
           <nav className="w-full h-full">
             <ul className="flex flex-col space-y-4 h-full justify-center">
-              <li className="relative group">
-                <a
-                  href="#about"
-                  className="text-[#8892b0] hover:text-white flex items-center text-sm font-bold"
-                >
-                  <div className="h-[1px] bg-[#8892b0] group-hover:bg-white w-8 group-hover:w-12 transition-all duration-300 mr-2"></div>
-                  <span className="uppercase">About</span>
-                </a>
-              </li>
-              <li className="relative group">
-                <a
-                  href="#experience"
-                  className="text-[#8892b0] hover:text-white flex items-center text-sm font-bold"
-                >
-                  <div className="h-[1px] bg-[#8892b0] group-hover:bg-white w-8 group-hover:w-12 transition-all duration-300 mr-2"></div>
-                  <span className="uppercase">Experience</span>
-                </a>
-              </li>
-              <li className="relative group">
-                <a
-                  href="#projects"
-                  className="text-[#8892b0] hover:text-white flex items-center text-sm font-bold"
-                >
-                  <div className="h-[1px] bg-[#8892b0] group-hover:bg-white w-8 group-hover:w-12 transition-all duration-300 mr-2"></div>
-                  <span className="uppercase">Projects</span>
-                </a>
-              </li>
+              {navItems.map((item) => (
+                <li key={item.href} className="relative group">
+                  <a
+                    href={item.href}
+                    className={`text-[#8892b0] hover:text-white flex items-center text-sm font-bold ${
+                      activeSection === item.href.slice(1) ? "text-white" : ""
+                    }`}
+                  >
+                    <div
+                      className={`h-[1px] bg-[#8892b0] group-hover:bg-white w-8 group-hover:w-12 transition-all duration-300 mr-2 ${
+                        activeSection === item.href.slice(1) ? "bg-white w-12" : ""
+                      }`}
+                    ></div>
+                    <span className="uppercase">{item.label}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
