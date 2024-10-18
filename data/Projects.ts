@@ -2,33 +2,30 @@
 
 export const projects = [
     {
-        title: 'Project 1',
-        description: 'Description of project 1',
-        technologies: ['Technology 1', 'Technology 2', 'Technology 3'],
-        link: 'https://www.project1.com',
+        title: 'E-commerce Platform',
+        description: 'A full-featured e-commerce platform with user authentication, product management, and payment integration.',
+        technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+        link: 'https://github.com/samcuxx',
         image: 'https://res.cloudinary.com/samuelamoah/image/upload/v1697974021/Samuel%20Amoah/tg4mekbqxol1nbdzxy7l.jpg',
-        sourceCode: 'https://www.github.com/project1',
-        live: 'https://www.project1.com'
+        sourceCode: 'https://github.com/samcuxx',
+        live: 'https://github.com/samcuxx'
     },
     {
-        title: 'Project 2',
-        description: 'Description of project 2',
-        technologies: ['Technology 1', 'Technology 2', 'Technology 3'],
-        link: 'https://www.project2.com',
+        title: 'Social Media App',
+        description: 'A social media application with real-time chat, post sharing, and notifications.',
+        technologies: ['Angular', 'Firebase', 'TypeScript', 'SCSS'],
+        link: 'https://github.com/samcuxx',
         image: 'https://res.cloudinary.com/samuelamoah/image/upload/v1697974021/Samuel%20Amoah/tg4mekbqxol1nbdzxy7l.jpg',
-        sourceCode: 'https://www.github.com/project2',
-        live: 'https://www.project2.com'
+        sourceCode: 'https://github.com/samcuxx',
+        live: 'https://github.com/samcuxx'
     },
     {
-        title: 'Project 3',
-        description: 'Description of project 3',
-        technologies: ['Technology 1', 'Technology 2', 'Technology 3'],
-        link: 'https://www.project3.com',
+        title: 'Project Management Tool',
+        description: 'A project management tool to track tasks, manage teams, and monitor project progress.',
+        technologies: ['Vue.js', 'Django', 'PostgreSQL', 'Docker'],
+        link: 'https://github.com/samcuxx',
         image: 'https://res.cloudinary.com/samuelamoah/image/upload/v1697974021/Samuel%20Amoah/tg4mekbqxol1nbdzxy7l.jpg',
-        sourceCode: 'https://www.github.com/project3',
-        live: 'https://www.project3.com'
+        sourceCode: 'https://github.com/samcuxx',
+        live: 'https://github.com/samcuxx'
     },
 ]
-    
-
-

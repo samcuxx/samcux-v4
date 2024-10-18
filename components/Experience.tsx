@@ -4,12 +4,20 @@ import MoveEffect from '@/components/ui/MoveEffect'
 import Link from 'next/link'
 import { experiences } from '@/data'
 
+interface ExperienceType {
+  link: string;
+  period: string;
+  title: string;
+  description: string;
+  technologies: string[];
+}
+
 const Experience = () => {
   return (
     <section id="experience" className="mb-24">
       <Heading3 className="mb-4 text-[#ccd6f6] md:hidden sticky top-0 z-10 py-3 bg-opacity-80 backdrop-filter backdrop-blur-md uppercase">Experience</Heading3>
       <div className="space-y-8">
-        {experiences.map((exp, index) => (
+        {experiences.map((exp: ExperienceType, index: number) => (
           <MoveEffect 
             key={index} 
             className="block overflow-hidden"
@@ -30,7 +38,7 @@ const Experience = () => {
                   </Heading3>
                   <Paragraph className="mb-4 text-sm text-[#8892b0]">{exp.description}</Paragraph>
                   <div className="flex flex-wrap gap-2 mt-1 md:mt-2">
-                    {exp.technologies.map((tech, i) => (
+                    {exp.technologies.map((tech: string, i: number) => (
                       <Badge key={i}>{tech}</Badge>
                     ))}
                   </div>
